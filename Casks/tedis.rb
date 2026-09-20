@@ -4,25 +4,25 @@ cask "tedis" do
     system "/usr/bin/xattr", "-dr", "com.apple.quarantine", staged_path.to_s
   end
 
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     on_arm do
-      sha256 "e080705652af59caa2826d9f9cdcf4be21233eed6814bfd35850f3c13d65427c"
+      sha256 "eaec6591e9de6fb1102a1e2673efe5fc9a30381b522ddcbde4d7b65219393ff8"
       url "https://github.com/itbaby/tedis/releases/download/v#{version}/tedis_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "16ad6b14d94c5944566b4b844e266ba0f968346ce8833f09b07592d0c2b73392"
+      sha256 "2fcd15be0cb56c8321e28db7a91b439d4ed0e2cd7b656a43e06ec0059ac7a527"
       url "https://github.com/itbaby/tedis/releases/download/v#{version}/tedis_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0ad7d77364e7572b3bd354fd6389f63adf25b45297dc8674562cfdad60af5221"
+      sha256 "f614260073cdefb49e944cf2c5a9c03a67f779a5c99d508f6bb63cb4527a6b70"
       url "https://github.com/itbaby/tedis/releases/download/v#{version}/tedis_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e202922a43f7628edaa5c773a41cd8a4d2f2e13bd4ee4060806a14157266d9ed"
+      sha256 "5c82a30a08bd113ecaf3c8ba367d1939be416ea6e5b792ad642479337a04473b"
       url "https://github.com/itbaby/tedis/releases/download/v#{version}/tedis_linux_amd64.tar.gz"
     end
   end
